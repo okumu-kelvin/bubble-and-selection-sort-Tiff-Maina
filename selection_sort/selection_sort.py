@@ -11,11 +11,3 @@ def selection_sort(arr):
 
         # Swap the found minimum element with the first unsorted element
         arr[i], arr[min_index] = arr[min_index], arr[i]
-
-# Example usage
-data = [64, 25, 12, 22, 11]
-print("Original array:", data)
-
-selection_sort(data)
-
-print("Sorted array:", data)

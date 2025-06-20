@@ -14,5 +14,5 @@ def selection_sort(arr):
         # Swap the smallest found with the current position
         arr[i], arr[min_index] = arr[min_index], arr[i]
 
-    # Return the sorted list
+    # Return the sorted list.
     return arr

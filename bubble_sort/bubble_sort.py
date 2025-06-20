@@ -9,5 +9,5 @@ def bubble_sort(unsorted_list):
             if unsorted_list[j] > unsorted_list[j + 1]:
                 unsorted_list[j], unsorted_list[j + 1] = unsorted_list[j + 1], unsorted_list[j]
 
-    # Return the sorted list
+    # Return the sorted list.
     return unsorted_list

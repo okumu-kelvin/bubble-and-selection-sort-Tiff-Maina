@@ -1,18 +1,21 @@
 def selection_sort(arr):
     n = len(arr)
 
-    # Loop over each position in the list
+    # Traverse through all array elements
     for i in range(n):
-        # Assume the current position has the smallest element
+        # Find the index of the minimum element in remaining unsorted part
         min_index = i
-
-        # Look through the rest of the list to find the true smallest
         for j in range(i + 1, n):
             if arr[j] < arr[min_index]:
                 min_index = j
 
-        # Swap the smallest found with the current position
+        # Swap the found minimum element with the first unsorted element
         arr[i], arr[min_index] = arr[min_index], arr[i]
 
-    # Return the sorted list.
-    return arr
+# Example usage
+data = [64, 25, 12, 22, 11]
+print("Original array:", data)
+
+selection_sort(data)
+
+print("Sorted array:", data)
